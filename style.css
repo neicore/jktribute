@@ -5,6 +5,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+
 #header {
     background-color: #fff;
     height: 75px;
@@ -81,20 +90,23 @@
 
 #img-div {
     width: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #image {
     height: auto;
 }
 
+#main {
+    overflow: hidden;
+}
+
 #img-caption {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
     padding: 10px 15px;
     background-color: #fff;
     font-weight: 500;
+    align-self: auto;
 }
 
 #tribute-info {
@@ -444,20 +456,73 @@
     color: #fff;
 }
 
-#footer > a{
+#footer>a {
     text-decoration: none;
     color: #fff;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-#my-links{
+#my-links {
     display: flex;
+    flex-wrap: wrap;
 }
 
-#my-links > a{
+#my-links>a {
     text-decoration: none;
     color: #fff;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+@media(max-width: 800px) {
+    #intro {
+        display: block;
+    }
+
+    #text {
+        text-align: center;
+    }
+
+    #image {
+        margin-top: 20px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+
+    #nav-menu>ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(245, 245, 245);
+        width: 50%;
+        height: 100%;
+        opacity: 0.98;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    #nav-menu>ul.show {
+        transform: translateX(-20px);
+    }
+}
+
+@media(max-width: 280px){
+    #title{
+        font-size: 70px;
+    }
+
+    #born-died{
+        font-size: 12px;
+        font-weight: 700;
+    }
 }

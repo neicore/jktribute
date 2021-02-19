@@ -19,6 +19,9 @@
 </head>
 
 <body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div
     <!-- Header Area, with logo and navigation -->
     <header id="header">
         <!-- logo -->
@@ -467,6 +470,11 @@
             <a href="https://t.me/neicore" target="_blank"><i class="fab fa-telegram"></i></a>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.menu-btn').addEventListener(
+            'click', () => document.querySelector('#nav-menu>ul').classList.toggle('show'));
+    </script>
 </body>
 
 </html>
