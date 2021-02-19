@@ -98,7 +98,7 @@
 }
 
 #img-caption {
-    padding: 10px 15px;
+    padding: 10px 0;
     background-color: #fff;
     font-weight: 500;
     align-self: auto;
@@ -473,14 +473,13 @@
 @media(max-width: 800px) {
     #intro {
         display: block;
-    }
-
-    #text {
         text-align: center;
     }
 
     #image {
         margin-top: 20px;
+        width: 100vw;
+        height: auto;
     }
 
     .menu-btn {
