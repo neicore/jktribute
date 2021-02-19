@@ -486,6 +486,7 @@
 
     #image {
         margin-top: 20px;
+        height: auto;
     }
 
     .menu-btn {
