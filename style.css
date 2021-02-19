@@ -89,13 +89,8 @@
 }
 
 #img-div {
-    width: auto;
     display: flex;
     flex-direction: column;
-}
-
-#image {
-    height: auto;
 }
 
 #main {
@@ -486,8 +481,6 @@
 
     #image {
         margin-top: 20px;
-        height: auto;
-        width: auto;
     }
 
     .menu-btn {
