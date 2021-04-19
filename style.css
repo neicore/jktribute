@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    scroll-behavior: smooth;
+}
+
 .menu-btn {
     cursor: pointer;
     position: absolute;
